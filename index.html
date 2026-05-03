@@ -7,24 +7,20 @@
     <style>
         :root { --gold: #c5a059; --black: #0a0a0a; --white: #ffffff; --dark-gray: #1a1a1a; }
         body { font-family: 'Helvetica', sans-serif; margin: 0; background: var(--black); color: var(--gold); line-height: 1.6; }
-        
         .header-section { background: var(--black); display: flex; justify-content: center; align-items: center; height: 100vh; border-bottom: 2px solid var(--gold); }
         .header-section img { max-width: 90%; height: auto; max-height: 80vh; }
-
         .container { max-width: 1200px; margin: auto; padding: 20px; }
         h2 { text-align: center; border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 10px; margin-top: 60px; width: 100%; text-transform: uppercase; font-size: 1.8em; letter-spacing: 2px; color: var(--gold); }
-        
         .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 20px 0; }
         .card { background: var(--dark-gray); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(197, 160, 89, 0.2); transition: 0.3s; border: 1px solid transparent; }
         .card:hover { transform: translateY(-5px); border-color: var(--gold); }
-        .card .img-placeholder { background: #222; height: 220px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-style: italic; border-bottom: 1px solid #333; font-size: 0.9em; }
+        .card .img-placeholder { background: #222; height: 220px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-style: italic; border-bottom: 1px solid #333; font-size: 0.9em; text-align: center; padding: 10px; }
         .info { padding: 15px; text-align: center; }
         .info h3 { margin: 10px 0; font-size: 1.1em; color: var(--gold); min-height: 2.2em; display: flex; align-items: center; justify-content: center; font-weight: bold; text-transform: uppercase; }
         .colors { font-size: 0.85em; color: #aaa; margin-bottom: 15px; min-height: 45px; }
         .price { color: var(--gold); font-weight: bold; font-size: 1.3em; display: block; margin-bottom: 15px; }
         .btn { background: var(--gold); color: var(--black); text-decoration: none; padding: 12px; border-radius: 6px; display: block; font-weight: bold; transition: 0.3s; text-transform: uppercase; font-size: 0.9em; }
         .btn:hover { background: #b18e4a; }
-        
         footer { background: var(--black); color: var(--white); text-align: center; padding: 30px; margin-top: 70px; border-top: 2px solid var(--gold); }
         .location-text { color: var(--gold); font-weight: bold; }
     </style>
@@ -40,10 +36,19 @@
     <h2>Les Chemises</h2>
     <div class="products">
         <div class="card">
-            <div class="img-placeholder">Chemise Classique</div>
+            <div class="img-placeholder">Chemise Mixte</div>
             <div class="info">
-                <h3>Chemise Simple</h3>
-                <p class="colors">Couleurs: Noir, Bleu Marine, Bleu Ciel</p>
+                <h3>Chemise Manches Blanches</h3>
+                <p class="colors">Couleurs: Bleu, Noir (Détails Blancs)</p>
+                <span class="price">150 DH</span>
+                <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Chemise Simple</div>
+            <div class="info">
+                <h3>Chemise Classique Simple</h3>
+                <p class="colors">Noir, Bleu Marine, Bleu Ciel</p>
                 <span class="price">120 DH</span>
                 <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
             </div>
@@ -52,17 +57,21 @@
             <div class="img-placeholder">Chemise Flanelle</div>
             <div class="info">
                 <h3>Chemise Flanelle</h3>
-                <p class="colors">Couleurs: Bleu, Gris, Beige, Noir</p>
+                <p class="colors">Bleu, Gris, Beige, Noir</p>
                 <span class="price">150 DH</span>
                 <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
             </div>
         </div>
+    </div>
+
+    <h2>Les Chaussures</h2>
+    <div class="products">
         <div class="card">
-            <div class="img-placeholder">Chemise Lin</div>
+            <div class="img-placeholder">Mocassins & Classique</div>
             <div class="info">
-                <h3>Chemise en Lin (Lolane)</h3>
-                <p class="colors">Couleurs: Blanc, Gris, Bleu, Beige</p>
-                <span class="price">150 DH</span>
+                <h3>Chaussures de Luxe</h3>
+                <p class="colors">Mocassins, Médical, Mariage (Classique)</p>
+                <span class="price">300 DH</span>
                 <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
             </div>
         </div>
@@ -74,16 +83,7 @@
             <div class="img-placeholder">Costume Piqué</div>
             <div class="info">
                 <h3>Costume Piqué</h3>
-                <p class="colors">Couleurs: Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
-                <span class="price">750 DH</span>
-                <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="img-placeholder">Costume Rayé</div>
-            <div class="info">
-                <h3>Costume Rayé</h3>
-                <p class="colors">Couleurs: Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
+                <p class="colors">Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
                 <span class="price">750 DH</span>
                 <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
             </div>
@@ -92,52 +92,21 @@
             <div class="img-placeholder">Costume Simple</div>
             <div class="info">
                 <h3>Costume Simple</h3>
-                <p class="colors">Couleurs: Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
+                <p class="colors">Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
                 <span class="price">650 DH</span>
                 <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
             </div>
         </div>
-        <div class="card">
-            <div class="img-placeholder">Costume Carreaux</div>
-            <div class="info">
-                <h3>Costume à Carreaux</h3>
-                <p class="colors">Couleurs: Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
-                <span class="price">750 DH</span>
-                <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
-            </div>
-        </div>
     </div>
 
-    <h2>Hauts & Vestes</h2>
+    <h2>Vêtements & Vestes</h2>
     <div class="products">
-        <div class="card">
-            <div class="img-placeholder">Polo</div>
-            <div class="info">
-                <h3>Polo (Manche Courte/Longue)</h3>
-                <p class="colors">Gris, Vert, Beige, Noir, Rouge, Blanc</p>
-                <span class="price">150 DH</span>
-                <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
-            </div>
-        </div>
         <div class="card">
             <div class="img-placeholder">Veste Fouda</div>
             <div class="info">
                 <h3>Veste en Daim (Fouda)</h3>
-                <p class="colors">Couleurs: Noir, Bleu, Tabac</p>
+                <p class="colors">Noir, Bleu, Tabac</p>
                 <span class="price">220 DH</span>
-                <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
-            </div>
-        </div>
-    </div>
-
-    <h2>Pantalons</h2>
-    <div class="products">
-        <div class="card">
-            <div class="img-placeholder">Jeans Délavé</div>
-            <div class="info">
-                <h3>Jeans Délavé</h3>
-                <p class="colors">Couleurs: Bleu, Noir, Gris</p>
-                <span class="price">180 DH</span>
                 <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
             </div>
         </div>
@@ -145,7 +114,7 @@
             <div class="img-placeholder">Pantalon Tissu</div>
             <div class="info">
                 <h3>Pantalon en Tissu</h3>
-                <p class="colors">Couleurs: Noir, Marron, Bleu Marine</p>
+                <p class="colors">Noir, Marron, Bleu Marine</p>
                 <span class="price">150 DH</span>
                 <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
             </div>
@@ -167,7 +136,7 @@
             <div class="img-placeholder">Ceinture Cuir</div>
             <div class="info">
                 <h3>Ceinture en Cuir</h3>
-                <p class="colors">Couleurs: Marron, Noir, Bleu</p>
+                <p class="colors">Bleu, Noir, Marron</p>
                 <span class="price">140 DH</span>
                 <a href="https://wa.me/212601896600" class="btn">Order on WhatsApp</a>
             </div>
