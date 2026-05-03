@@ -1,112 +1,160 @@
-
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bellino - Collection Luxe</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Bellino Maroc | Collection Luxe</title>
     <style>
-        :root { --gold: #D4AF37; --black: #1a1a1a; --light-black: #2d2d2d; }
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', sans-serif; background-color: var(--black); color: white; }
-        header { background: var(--light-black); border-bottom: 2px solid var(--gold); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
-        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
-        .logo { font-size: 2rem; font-weight: bold; color: var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
-        .social-icons a { color: var(--gold); font-size: 1.5rem; margin-left: 15px; text-decoration: none; }
-        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('shop.jpg') no-repeat center center; background-size: cover; height: 30vh; display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 70px; border-bottom: 2px solid var(--gold); }
-        .hero h1 { color: var(--gold); font-size: 2.5rem; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
-        .product-card { background: var(--light-black); border: 1px solid #444; border-radius: 10px; padding: 1.5rem; text-align: center; transition: 0.3s; }
-        .product-card:hover { border-color: var(--gold); transform: translateY(-5px); }
-        .price { color: var(--gold); font-weight: bold; font-size: 1.4rem; margin-bottom: 15px; display: block; }
-        select { width: 100%; padding: 10px; margin-bottom: 15px; background: #333; color: white; border: 1px solid var(--gold); border-radius: 5px; }
-        .cta-button { display: inline-block; background: var(--gold); color: black; padding: 0.8rem; text-decoration: none; border-radius: 5px; font-weight: bold; width: 100%; border: none; cursor: pointer; text-transform: uppercase; text-align: center;}
-        .footer-info { background: var(--light-black); padding: 3rem; border-radius: 15px; margin-top: 4rem; text-align: center; border: 1px solid var(--gold); }
-        .maps-link { color: var(--gold); text-decoration: none; font-weight: bold; border-bottom: 1px solid var(--gold); }
-        .schedule { margin: 15px 0; color: #ccc; font-size: 0.9rem; }
+        :root { --gold: #c5a059; --black: #111; --white: #fff; --gray: #f4f4f4; }
+        body { font-family: 'Helvetica', sans-serif; margin: 0; background: var(--gray); color: var(--black); line-height: 1.6; }
+        header { background: var(--black); color: var(--white); padding: 30px; text-align: center; border-bottom: 3px solid var(--gold); }
+        header h1 { letter-spacing: 3px; margin: 0; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; }
+        h2 { text-align: center; border-bottom: 2px solid var(--gold); display: inline-block; padding-bottom: 5px; margin-top: 40px; width: 100%; text-transform: uppercase; }
+        
+        .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 20px 0; }
+        .card { background: var(--white); border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card .img-placeholder { background: #eee; height: 250px; display: flex; align-items: center; justify-content: center; color: #999; font-style: italic; }
+        .info { padding: 15px; text-align: center; }
+        .info h3 { margin: 10px 0; font-size: 1.1em; color: var(--black); }
+        .colors { font-size: 0.85em; color: #666; margin-bottom: 15px; min-height: 40px; }
+        .price { color: var(--gold); font-weight: bold; font-size: 1.2em; display: block; margin-bottom: 10px; }
+        .btn { background: #25d366; color: white; text-decoration: none; padding: 12px; border-radius: 5px; display: block; font-weight: bold; }
+        
+        footer { background: var(--black); color: white; text-align: center; padding: 25px; margin-top: 50px; }
     </style>
 </head>
 <body>
 
 <header>
-    <nav>
-        <a href="#" class="logo">Bellino</a>
-        <div class="social-icons">
-            <a href="https://whatsapp.com/channel/0029VbCaKjlDOQIOAv3suQ0I" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://www.instagram.com/bellino_maroc" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-    </nav>
+    <h1>BELLINO MAROC</h1>
+    <p>L'élégance à l'italienne au cœur de Casablanca</p>
 </header>
 
-<div class="hero">
-    <div>
-        <h1>BELLINO MAROC</h1>
-        <p style="color: var(--gold); letter-spacing: 3px;">COLLECTION EXCLUSIVE</p>
-    </div>
-</div>
-
 <div class="container">
-    <div class="products-grid" id="grid"></div>
-    <div class="footer-info">
-        <h3 style="color: var(--gold); margin-bottom: 1rem;">CONTACT & LOCALISATION</h3>
-        <p class="schedule"><i class="far fa-clock"></i> Ouvert tous les jours jusqu'à 20:30</p>
-        <p>📍 <a href="https://maps.app.goo.gl/A6Z56sCKgCqnPQLo6" target="_blank" class="maps-link">Passage Glaoui, Bd Mohammed V, Casablanca</a></p><br>
-        <a href="https://wa.me/212601896600" class="cta-button" style="width: auto; padding: 10px 40px;">Commander par WhatsApp</a>
+    
+    <h2>Les Chemises</h2>
+    <div class="products">
+        <div class="card">
+            <div class="img-placeholder">Chemise Simple</div>
+            <div class="info">
+                <h3>Chemise Classique Simple</h3>
+                <p class="colors">Couleurs: Noir, Bleu Marine, Bleu Ciel</p>
+                <span class="price">199 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Chemise Flanelle</div>
+            <div class="info">
+                <h3>Chemise en Flanelle</h3>
+                <p class="colors">Couleurs: Bleu, Gris, Beige, Noir</p>
+                <span class="price">250 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Chemise Lin</div>
+            <div class="info">
+                <h3>Chemise en Lin</h3>
+                <p class="colors">Couleurs: Blanc, Gris, Bleu, Beige</p>
+                <span class="price">280 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
     </div>
+
+    <h2>Les Costumes</h2>
+    <div class="products">
+        <div class="card">
+            <div class="img-placeholder">Costume Piqué</div>
+            <div class="info">
+                <h3>Costume Piqué</h3>
+                <p class="colors">Couleurs: Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
+                <span class="price">1200 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Costume Rayé</div>
+            <div class="info">
+                <h3>Costume Rayé</h3>
+                <p class="colors">Couleurs: Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
+                <span class="price">1250 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Costume Simple</div>
+            <div class="info">
+                <h3>Costume Simple</h3>
+                <p class="colors">Couleurs: Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
+                <span class="price">1100 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Costume Carreaux</div>
+            <div class="info">
+                <h3>Costume à Carreaux</h3>
+                <p class="colors">Couleurs: Bleu Marine, Gris, Noir, Beige, Bleu Roi</p>
+                <span class="price">1300 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Sport Chic (Polo & Jeans)</h2>
+    <div class="products">
+        <div class="card">
+            <div class="img-placeholder">Polo Manche Longue</div>
+            <div class="info">
+                <h3>Polo Classique</h3>
+                <p class="colors">Couleurs: Gris, Vert, Beige, Noir, Rouge</p>
+                <span class="price">150 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Polo Manche Courte</div>
+            <div class="info">
+                <h3>Polo Manche Courte</h3>
+                <p class="colors">Couleurs: Gris, Vert, Beige, Noir, Rouge, Blanc</p>
+                <span class="price">140 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Jeans Délavé</div>
+            <div class="info">
+                <h3>Jeans Délavé</h3>
+                <p class="colors">Couleurs: Bleu, Noir, Gris</p>
+                <span class="price">220 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Accessoires</h2>
+    <div class="products">
+        <div class="card">
+            <div class="img-placeholder">Ceinture</div>
+            <div class="info">
+                <h3>Ceinture en Cuir</h3>
+                <p class="colors">Couleurs: Marron, Noir, Bleu</p>
+                <span class="price">90 DH</span>
+                <a href="https://wa.me/2126XXXXXXXX" class="btn">Commander via WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
 </div>
 
-<script>
-    const products = [
-        /* القوامج */
-        { name: 'Chemise Classic (Standard)', price: 120, type: 'clothes' },
-        { name: 'Chemise Rayée / Flanelle / Motif', price: 150, type: 'clothes' },
-        /* الكوستيمات ب 3 الأنواع */
-        { name: 'Costume Classique (Normal)', price: 650, type: 'suit' },
-        { name: 'Costume Classique (Piqué)', price: 750, type: 'suit' },
-        { name: 'Costume Classique (Carreaux)', price: 750, type: 'suit' },
-        /* سلعة أخرى */
-        { name: 'Jeans Regular Premium', price: 180, type: 'jeans' },
-        { name: 'Chaussures Classique / Mariage', price: 300, type: 'shoes' }
-    ];
+<footer>
+    <p>📍 Adresse: Passage El Glaoui, Casablanca, Maroc</p>
+    <p>&copy; 2026 Bellino Maroc. Tous droits réservés.</p>
+</footer>
 
-    function renderProducts() {
-        const grid = document.getElementById('grid');
-        products.forEach((p, index) => {
-            let sizeOptions = '';
-            if(p.type === 'clothes') {
-                ['M', 'L', 'XL', 'XXL'].forEach(s => sizeOptions += `<option value="${s}">${s}</option>`);
-            } else if(p.type === 'suit') {
-                for(let i=48; i<=58; i+=2) { 
-                    sizeOptions += `<option value="${i}">${i}</option>`;
-                }
-            } else if(p.type === 'jeans' || p.type === 'shoes') {
-                let start = 40, end = (p.type === 'shoes') ? 45 : 54;
-                for(let i=start; i<=end; i++) {
-                    sizeOptions += `<option value="${i}">${i}</option>`;
-                }
-            }
-
-            grid.innerHTML += `
-                <div class="product-card">
-                    <h3>${p.name}</h3>
-                    <div class="price">${p.price} DH</div>
-                    <label style="font-size: 0.8rem; color: #888; display: block; margin-bottom: 5px;">Taille :</label>
-                    <select id="size-${index}">${sizeOptions}</select>
-                    <button class="cta-button" onclick="order(${index})">Commander</button>
-                </div>
-            `;
-        });
-    }
-
-    function order(index) {
-        const p = products[index];
-        const size = document.getElementById(`size-${index}`).value;
-        const msg = `Bonjour Bellino!%0AJe souhaite commander :%0A- Produit : ${p.name}%0A- Taille : ${size}%0A- Prix : ${p.price} DH`;
-        window.open(`https://wa.me/212601896600?text=${msg}`, '_blank');
-    }
-    renderProducts();
-</script>
 </body>
 </html>
