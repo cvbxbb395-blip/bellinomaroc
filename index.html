@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bellino Maroc | Collection Royale</title>
+    <title>Bellino Maroc | Collection Complète</title>
     <style>
         :root { --gold: #c5a059; --black: #0a0a0a; --white: #ffffff; --dark-gray: #1a1a1a; }
         body { font-family: 'Helvetica', sans-serif; margin: 0; background: var(--black); color: var(--gold); line-height: 1.6; }
@@ -14,16 +14,16 @@
         .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; padding: 20px 0; }
         .card { background: var(--dark-gray); border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(197, 160, 89, 0.2); transition: 0.3s; border: 1px solid transparent; }
         .card:hover { transform: translateY(-5px); border-color: var(--gold); }
-        .card .img-placeholder { background: #222; height: 220px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-style: italic; border-bottom: 1px solid #333; font-size: 0.9em; text-align: center; padding: 10px; }
+        .card .img-placeholder { background: #222; height: 200px; display: flex; align-items: center; justify-content: center; color: var(--gold); font-style: italic; border-bottom: 1px solid #333; text-align: center; font-size: 0.9em; }
         .info { padding: 15px; text-align: center; }
         .info h3 { margin: 10px 0; font-size: 1.1em; color: var(--gold); min-height: 2.2em; display: flex; align-items: center; justify-content: center; font-weight: bold; text-transform: uppercase; }
         .colors { font-size: 0.85em; color: #aaa; margin-bottom: 15px; min-height: 45px; }
-        .price { color: var(--gold); font-weight: bold; font-size: 1.4em; display: block; margin-bottom: 15px; }
-        .btn { background: var(--gold); color: var(--black); text-decoration: none; padding: 12px; border-radius: 6px; display: block; font-weight: bold; transition: 0.3s; text-transform: uppercase; font-size: 0.9em; }
+        .price { color: var(--gold); font-weight: bold; font-size: 1.3em; display: block; margin-bottom: 15px; }
+        .btn { background: var(--gold); color: var(--black); text-decoration: none; padding: 12px; border-radius: 6px; display: block; font-weight: bold; transition: 0.3s; text-transform: uppercase; }
         .btn:hover { background: #b18e4a; }
-        footer { background: var(--black); color: var(--white); text-align: center; padding: 40px 20px; margin-top: 70px; border-top: 2px solid var(--gold); }
-        .location-link { color: var(--gold); text-decoration: none; font-weight: bold; display: block; margin-bottom: 15px; font-size: 1.1em; }
-        .channel-btn { background: #25D366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; margin-top: 10px; font-weight: bold; }
+        footer { background: var(--black); color: white; text-align: center; padding: 40px 20px; margin-top: 70px; border-top: 2px solid var(--gold); }
+        .footer-link { color: var(--gold); text-decoration: none; font-weight: bold; display: block; margin: 10px 0; }
+        .channel-btn { background: #25D366; color: white; padding: 10px 20px; border-radius: 25px; text-decoration: none; display: inline-block; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -37,12 +37,12 @@
     <h2>Les Chemises</h2>
     <div class="products">
         <div class="card">
-            <div class="img-placeholder">Chemise Mixte</div>
+            <div class="img-placeholder">Manches Blanches</div>
             <div class="info">
                 <h3>Chemise Manches Blanches</h3>
-                <p class="colors">Couleurs: Bleu, Noir</p>
+                <p class="colors">Bleu, Noir</p>
                 <span class="price">150 DH</span>
-                <a href="https://wa.me/212601896600?text=Bonjour%20Bellino%20Maroc,%20je%20souhaite%20commander%20la%20Chemise%20Manches%20Blanches%20(150%20DH).%20Quelle%20couleur%20choisissez-vous%20?" class="btn">Order on WhatsApp</a>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20la%20Chemise%20Manches%20Blanches%20(150%20DH)" class="btn">Order on WhatsApp</a>
             </div>
         </div>
         <div class="card">
@@ -51,7 +51,16 @@
                 <h3>Chemise Classique Simple</h3>
                 <p class="colors">Noir, Bleu Marine, Bleu Ciel</p>
                 <span class="price">120 DH</span>
-                <a href="https://wa.me/212601896600?text=Bonjour%20Bellino%20Maroc,%20je%20souhaite%20commander%20la%20Chemise%20Classique%20Simple%20(120%20DH).%20Quelle%20couleur%20choisissez-vous%20?" class="btn">Order on WhatsApp</a>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20la%20Chemise%20Simple%20(120%20DH)" class="btn">Order on WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Chemise Flanelle / Lin</div>
+            <div class="info">
+                <h3>Chemise Flanelle / Lin</h3>
+                <p class="colors">Diverses Couleurs</p>
+                <span class="price">150 DH</span>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20la%20Chemise%20Flanelle/Lin%20(150%20DH)" class="btn">Order on WhatsApp</a>
             </div>
         </div>
     </div>
@@ -59,12 +68,12 @@
     <h2>Les Chaussures</h2>
     <div class="products">
         <div class="card">
-            <div class="img-placeholder">Mocassins & Classique</div>
+            <div class="img-placeholder">Chaussures Luxe</div>
             <div class="info">
-                <h3>Chaussures de Luxe</h3>
-                <p class="colors">Mocassins, Médical, Mariage</p>
+                <h3>Mocassin / Médical / Mariage</h3>
+                <p class="colors">Cuir de Haute Qualité</p>
                 <span class="price">300 DH</span>
-                <a href="https://wa.me/212601896600?text=Bonjour%20Bellino%20Maroc,%20je%20souhaite%20commander%20les%20Chaussures%20de%20Luxe%20(300%20DH).%20Quel%20modèle%20choisissez-vous%20(Mocassin/Médical/Mariage)%20?" class="btn">Order on WhatsApp</a>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20des%20Chaussures%20(300%20DH)" class="btn">Order on WhatsApp</a>
             </div>
         </div>
     </div>
@@ -72,12 +81,74 @@
     <h2>Les Costumes</h2>
     <div class="products">
         <div class="card">
-            <div class="img-placeholder">Costume Piqué</div>
+            <div class="img-placeholder">Costume Piqué/Rayé/Carreaux</div>
             <div class="info">
-                <h3>Costume Piqué</h3>
+                <h3>Costume Premium</h3>
                 <p class="colors">Bleu Marine, Gris, Noir, Beige</p>
                 <span class="price">750 DH</span>
-                <a href="https://wa.me/212601896600?text=Bonjour%20Bellino%20Maroc,%20je%20souhaite%20commander%20le%20Costume%20Piqu%C3%A9%20(750%20DH).%20Quelle%20couleur%20choisissez-vous%20?" class="btn">Order on WhatsApp</a>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20un%20Costume%20Premium%20(750%20DH)" class="btn">Order on WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Costume Simple</div>
+            <div class="info">
+                <h3>Costume Classique Simple</h3>
+                <p class="colors">Noir, Gris, Bleu</p>
+                <span class="price">650 DH</span>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20le%20Costume%20Simple%20(650%20DH)" class="btn">Order on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Vestes & Pantalons</h2>
+    <div class="products">
+        <div class="card">
+            <div class="img-placeholder">Veste Fouda</div>
+            <div class="info">
+                <h3>Veste en Daim (Fouda)</h3>
+                <p class="colors">Noir, Bleu, Tabac</p>
+                <span class="price">220 DH</span>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20la%20Veste%20Fouda%20(220%20DH)" class="btn">Order on WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Pantalon Toile / Jeans</div>
+            <div class="info">
+                <h3>Pantalon Toile / Jeans</h3>
+                <p class="colors">Plusieurs Couleurs</p>
+                <span class="price">180 DH</span>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20un%20Pantalon%20Toile/Jeans%20(180%20DH)" class="btn">Order on WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Pantalon Tissu / Polo</div>
+            <div class="info">
+                <h3>Pantalon Tissu / Polo</h3>
+                <p class="colors">Noir, Marron, Bleu Marine</p>
+                <span class="price">150 DH</span>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20Pantalon%20Tissu/Polo%20(150%20DH)" class="btn">Order on WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <h2>Accessoires</h2>
+    <div class="products">
+        <div class="card">
+            <div class="img-placeholder">Ceintures</div>
+            <div class="info">
+                <h3>Ceinture en Cuir</h3>
+                <p class="colors">Bleu, Noir, Marron</p>
+                <span class="price">140 DH</span>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20une%20Ceinture%20(140%20DH)" class="btn">Order on WhatsApp</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-placeholder">Cravates</div>
+            <div class="info">
+                <h3>Cravate Élégante</h3>
+                <p class="colors">Modèles Variés</p>
+                <span class="price">80 DH</span>
+                <a href="https://wa.me/212601896600?text=Je%20veux%20commander%20une%20Cravate%20(80%20DH)" class="btn">Order on WhatsApp</a>
             </div>
         </div>
     </div>
@@ -85,14 +156,9 @@
 </div>
 
 <footer>
-    <a href="https://www.google.com/maps/search/?api=1&query=Passage+El+Glaoui+Casablanca" target="_blank" class="location-link">
-        📍 Passage El Glaoui, Casablanca, Maroc (Open in Maps)
-    </a>
-    <br>
-    <a href="https://whatsapp.com/channel/0029VbCaKjlDOQIOAv3suQ0I" target="_blank" class="channel-btn">
-        Follow our WhatsApp Channel
-    </a>
-    <p style="margin-top: 20px;">&copy; 2026 Bellino Maroc. All Rights Reserved.</p>
+    <a href="https://maps.app.goo.gl/GHmLCTfMnBvsMc3A6" target="_blank" class="footer-link">📍 Passage El Glaoui, Casablanca, Maroc (Open in Maps)</a>
+    <a href="https://whatsapp.com/channel/0029VbCaKjlDOQIOAv3suQ0I" target="_blank" class="channel-btn">Follow our WhatsApp Channel</a>
+    <p style="margin-top:20px;">&copy; 2026 Bellino Maroc. All Rights Reserved.</p>
 </footer>
 
 </body>
