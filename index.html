@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellino - Collection Luxe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37; 
+            --black: #1a1a1a;
+            --light-black: #2d2d2d;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--black); color: white; }
+        
+        header { background: var(--light-black); border-bottom: 2px solid var(--gold); padding: 1rem 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .logo { font-size: 2rem; font-weight: bold; color: var(--gold); text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1350&q=80'); height: 40vh; display: flex; align-items: center; justify-content: center; text-align: center; margin-top: 70px; border-bottom: 1px solid var(--gold); }
+        .hero h1 { color: var(--gold); font-size: 3rem; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        
+        .product-card { background: var(--light-black); border: 1px solid #444; border-radius: 10px; padding: 1.5rem; text-align: center; transition: 0.3s; }
+        .product-card:hover { border-color: var(--gold); transform: translateY(-5px); }
+        
+        .product-card h3 { color: #fff; margin-bottom: 10px; font-size: 1.1rem; }
+        .price { color: var(--gold); font-weight: bold; font-size: 1.4rem; margin-bottom: 15px; }
+        
+        .cta-button { display: inline-block; background: var(--gold); color: black; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; transition: 0.3s; width: 100%; border: none; cursor: pointer; }
+        .cta-button:hover { background: #f1c40f; }
+
+        .footer-info { background: var(--light-black); padding: 3rem; border-radius: 15px; margin-top: 4rem; text-align: center; border: 1px solid var(--gold); }
+        .social-link { color: var(--gold); font-size: 2rem; margin: 0 15px; text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#" class="logo">Bellino</a>
+        <a href="https://www.instagram.com/bellino_maroc?igsh=MXY0cm92ZDFlcGF2ZA==" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h1>BELLINO MAROC</h1>
+        <p style="color: var(--gold); letter-spacing: 3px;">L'ÉLÉGANCE MASCULINE</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="products-grid">
+        <div class="product-card" onclick="order('Polo', '120')">
+            <h3>Polo</h3>
+            <div class="price">120 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+
+        <div class="product-card" onclick="order('Polo Manches Courtes', '120')">
+            <h3>Polo Manches Courtes</h3>
+            <div class="price">120 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+
+        <div class="product-card" onclick="order('Chemise Croisée', '150')">
+            <h3>Chemise Croisée</h3>
+            <div class="price">150 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+
+        <div class="product-card" onclick="order('Veste en Daim (Fouda)', '220')">
+            <h3>Veste en Daim (Fouda)</h3>
+            <div class="price">220 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+
+        <div class="product-card" onclick="order('Costume Classique', '650')">
+            <h3>Costume Classique</h3>
+            <div class="price">650 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+
+        <div class="product-card" onclick="order('Chemise Classique', '120')">
+            <h3>Chemise Classique</h3>
+            <div class="price">120 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+
+        <div class="product-card" onclick="order('Pantalons Jeans', '180')">
+            <h3>Pantalons Jeans</h3>
+            <div class="price">180 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+
+        <div class="product-card" onclick="order('Chaussures de Luxe', '300')">
+            <h3>Chaussures de Luxe</h3>
+            <div class="price">300 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+        
+        <div class="product-card" onclick="order('Ceinture', '140')">
+            <h3>Ceinture</h3>
+            <div class="price">140 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+
+        <div class="product-card" onclick="order('Cravate', '80')">
+            <h3>Cravate</h3>
+            <div class="price">80 DH</div>
+            <button class="cta-button">Commander</button>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        <h3 style="color: var(--gold); margin-bottom: 1rem; text-transform: uppercase;">Contact & Localisation</h3>
+        <p>📍 Avenue Mohammed V, près du Passage Glaoui, Casablanca</p><br>
+        <div style="margin-top: 20px;">
+            <a href="https://maps.app.goo.gl/NKnJHpbpDALiA5xw5" target="_blank" class="cta-button" style="display:inline-block; width: auto; padding: 10px 30px; margin: 5px;">Google Maps</a>
+            <a href="https://www.instagram.com/bellino_maroc?igsh=MXY0cm92ZDFlcGF2ZA==" target="_blank" class="cta-button" style="display:inline-block; width: auto; padding: 10px 30px; margin: 5px; background: transparent; border: 1px solid var(--gold); color: var(--gold);">Instagram</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function order(item, price) {
+        const msg = `Bonjour Bellino! Je souhaite commander :%0A- Produit : ${item}%0A- Prix : ${price} DH`;
+        window.open(`https://wa.me/212601896600?text=${msg}`, '_blank');
+    }
+</script>
+
+</body>
+</html>
